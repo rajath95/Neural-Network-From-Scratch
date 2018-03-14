@@ -29,6 +29,6 @@ def train(inputs,outputs,weights,iterations):
     return weights
 
 def predict_output(predict,weights):
-    return sigmoid(dot(predict,weights))
+    return round(sigmoid(dot(predict,weights)))
 
 Neural_Networks()
